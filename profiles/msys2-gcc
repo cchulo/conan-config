@@ -1,0 +1,21 @@
+# Recommended to install Mingw-w64 via MSYS2: https://www.msys2.org/
+mingw64_location=C:/msys64/mingw64/bin
+
+# In addition, install the following:
+# - base-devel
+# - mingw-w64-x86_64-toolchain
+# - mingw-w64-x86_64-cmake
+# - mingw-w64-x86_64-ninja
+
+[settings]
+compiler=gcc
+compiler.version=11.3
+compiler.libcxx=libstdc++11
+compiler.cppstd=17
+compiler.threads=posix
+
+[env]
+CONAN_CMAKE_GENERATOR=Ninja
+CC=$mingw64_location/gcc
+CXX=$mingw64_location/g++
+PATH=[$mingw64_location]
