@@ -7,5 +7,9 @@ Feel free to use it if you find it helpful:
 
 `conan config install https://github.com/cchulo/conan-config --type git`
 
+For subsequent updates just type:
+
+`conan config install`
+
 For additional information about conan configs check out this 
 [link](https://docs.conan.io/en/latest/reference/commands/consumer/config.html)
